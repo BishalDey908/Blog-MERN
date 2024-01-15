@@ -13,7 +13,7 @@ app.use(express.json())
 //{Credentials:true}
 app.use(cors(
     {
-        origin:["https://blog-mern-frontend-flax.vercel.app/"],
+        origin:["https://blog-mern-frontend-flax.vercel.app"],
         methods:["POST","PUT","DELETE","GET"],
         Credentials:true
     }
