@@ -25,9 +25,11 @@ export default function PostCard(prop) {
             {user.name.slice(0,1)}
           </Avatar>
         }
+        
         action={
           auth._id === user._id && <Actions id={_id}/>
         }
+        
         title={title}
         subheader={moment(createdOn).fromNow()}
       />
