@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import  { useEffect, useState } from "react"
 import {  useNavigate, useParams } from "react-router-dom"
 import { toast } from "react-toastify"
 // import { toast } from "react-toastify"
@@ -49,7 +49,7 @@ const UpdatePost = () => {
         e.preventDefault()
          console.log(blog)
 
-          const res = await fetch("http://localhost:7000/api/blog/update/"+id,{
+          const res = await fetch("http://blog-mern-backend-hazel.vercel.app/api/blog/update/"+id,{
             method: "PUT",
             headers :{
                 'Content-Type':'application/json',

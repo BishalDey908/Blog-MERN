@@ -24,7 +24,7 @@ const Register = () => {
     console.log(user)
 
     //send the user data to the DB
-    const res = await fetch("http://localhost:7000/api/user/register",{
+    const res = await fetch("http://blog-mern-backend-hazel.vercel.app/api/user/register",{
       method:"POST",
       headers:{
         'Content-Type':'application/json'

@@ -13,7 +13,7 @@ const Navbar = () => {
 
   useEffect(()=>{
    const fetchUser = async ()=>{
-    const res = await fetch("http://localhost:7000/api/user/auth",{
+    const res = await fetch("http://blog-mern-backend-hazel.vercel.app/api/user/auth",{
       method:"GET",
       headers:{
         token:localStorage.getItem("token")

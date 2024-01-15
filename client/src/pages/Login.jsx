@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContex } from "../App";
 
+
 const Login = () => {
   const [user, setUser] = useState({
     email: "",
@@ -20,9 +21,10 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(user);
-
+    
+    
     //check the user exist or not
-    const res = await fetch("http://localhost:7000/api/user/login", {
+    const res = await fetch(`http://blog-mern-backend-hazel.vercel.app/api/user/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -67,7 +69,9 @@ const Login = () => {
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                 Create and account
+                
               </h1>
+              
               <form className="space-y-4 md:space-y-6" action="#">
                 <div>
                   <label

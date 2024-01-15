@@ -17,6 +17,7 @@ import { AuthContex } from '../App';
 export default function PostCard(prop) {
   const {user,_id,title,content,image,createdOn}=prop.post
   const {auth} = useContext(AuthContex)
+  
   return (
     <Card sx={{ width: "100%", borderRadius:"10px" }} id={_id} elevation={10}>
       <CardHeader
@@ -27,7 +28,11 @@ export default function PostCard(prop) {
         }
         
         action={
-          auth._id === user._id && <Actions id={_id}/>
+          
+          
+          // auth._id === user._id && <Actions id={_id} /> 
+          <Actions id={_id} />
+          
         }
         
         title={title}

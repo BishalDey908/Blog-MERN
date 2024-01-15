@@ -19,7 +19,8 @@ const navigator = useNavigate()
     
       const handleSubmit = async (e) =>{
         e.preventDefault()
-        const res = await fetch("http://localhost:7000/api/blog/create",{
+        
+        const res = await fetch("http://blog-mern-backend-hazel.vercel.app/api/blog/create",{
           method:"POST",
           headers:{
             'Content-Type':'application/json',
