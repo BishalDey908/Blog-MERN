@@ -34,7 +34,7 @@ const DisplayPost = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("http://blog-mern-backend-hazel.vercel.app/api/blog/", {
+      const res = await fetch("https://blog-mern-backend-hazel.vercel.app/api/blog/", {
         method: "GET",
         headers: {
           token: localStorage.getItem("token"),

@@ -25,7 +25,7 @@ export default function Actions({id}) {
   const handleDelete = async ()=>{
     console.log(id)
 
-    const res= await fetch("http://blog-mern-backend-hazel.vercel.app/api/blog/delete/"+id,{
+    const res= await fetch("https://blog-mern-backend-hazel.vercel.app/api/blog/delete/"+id,{
       method:"DELETE",
       headers:{
         token:localStorage.getItem("token")

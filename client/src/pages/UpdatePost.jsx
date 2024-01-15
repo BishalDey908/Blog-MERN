@@ -49,7 +49,7 @@ const UpdatePost = () => {
         e.preventDefault()
          console.log(blog)
 
-          const res = await fetch("http://blog-mern-backend-hazel.vercel.app/api/blog/update/"+id,{
+          const res = await fetch("https://blog-mern-backend-hazel.vercel.app/api/blog/update/"+id,{
             method: "PUT",
             headers :{
                 'Content-Type':'application/json',

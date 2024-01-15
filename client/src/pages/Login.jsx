@@ -24,7 +24,7 @@ const Login = () => {
     
     
     //check the user exist or not
-    const res = await fetch(`http://blog-mern-backend-hazel.vercel.app/api/user/login`, {
+    const res = await fetch(`https://blog-mern-backend-hazel.vercel.app/api/user/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
