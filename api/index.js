@@ -9,7 +9,15 @@ import BlogRouter from "./routes/blog.js"
 dotenv.config()
 const app = express()
 app.use(express.json())
-app.use(cors({Credentials:true}))
+
+//{Credentials:true}
+app.use(cors(
+    {
+        origin:["blog-mern-frontend-flax.vercel.app/"],
+        methods:["POST","PUT","DELETE","GET"],
+        Credentials:true
+    }
+))
 
 //use custom route------------
 app.use("/api/user",userRouter)
